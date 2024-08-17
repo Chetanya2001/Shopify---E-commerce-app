@@ -1,0 +1,38 @@
+.grid-4-cols{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    row-gap: 15px;
+    float: right;
+}
+.right{
+    display: block;
+    float: left;
+    margin-top: 20px;
+ width: 300px;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.accord{
+    width:300px
+}
+.style {
+    background-color: #0e141ef5;
+}
+.card-title {
+    background-color: #fff;
+    border-radius: 10%;
+
+}
+.but {
+    background-color: #0e141e !important;
+    color : #32c766;
+}
+.if {
+    background-color: #fff;
+    color : #222;
+    font-weight: 600;
+}

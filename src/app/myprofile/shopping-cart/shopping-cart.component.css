@@ -1,0 +1,175 @@
+.bf{
+    border-left : 7px solid #32c766
+}
+#button {
+    color : black
+}
+.cart-container{
+    display:flex;
+    flex-direction: column;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+}
+.btnary {
+    text-align: center;
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(131, 56, 201);
+    border: 3px solid #32c766;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+   }
+   
+   .btnary::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(136, 128, 185);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+   
+   .btnary:hover::before {
+    transform: translateX(0);
+   }
+   .white {
+    color : #0e141e
+}
+.label {
+    font-weight: 600;
+}
+.italic {
+    font-style: italic;
+}
+/* Style for the "+" button */
+#button.btn-success {
+    background-color: #28a745; /* Change the background color to green */
+    color: #fff; /* Change the text color to white */
+    border: none; /* Remove the button border */
+    padding: 5px 10px; /* Adjust the padding for better appearance */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    margin-right: 5px; /* Add some spacing to the right */
+}
+
+/* Hover effect for the "+" button */
+#button.btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Style for the "Delete" button */
+#button.btn-danger {
+    background-color: #dc3545; /* Change the background color to red */
+    color: #fff; /* Change the text color to white */
+    border: none; /* Remove the button border */
+    padding: 5px 10px; /* Adjust the padding for better appearance */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Show a pointer cursor on hover */
+}
+
+/* Hover effect for the "Delete" button */
+#button.btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+/* Basic styling for the shopping cart container */
+.shopping-cart-container {
+    background-color: rgb(141, 245, 160);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Center the cart title */
+  .title.container-lg.bf {
+    text-align: center;
+  }
+  
+  /* Style the table headers */
+  .table.white th {
+    background-color: #0e141e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the table rows */
+  .table.white tbody tr {
+    text-align: center;
+  }
+  
+  /* Style the product images */
+  .table.white tbody tr th img {
+    max-width: 144px;
+    max-height: 96px;
+  }
+  
+  /* Style the product name and description */
+  .table.white tbody tr td .name h3 {
+    color: #0e141e;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .table.white tbody tr td .name p.italic {
+    color: #666;
+    font-style: italic;
+  }
+  
+  /* Style the product price */
+  .table.white tbody tr td .price p.label {
+    font-weight: bold;
+    color: #0e141e;
+  }
+  
+  /* Style the quantity buttons */
+  .table.white tbody tr td button.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Style the total price */
+  .table.white tbody tr td b {
+    color: #0e141e;
+    font-size: 18px;
+  }
+  
+  /* Style the delete button */
+  .table.white tbody tr td button.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Center the "Proceed To CheckOut" button */
+  .container a.btnary {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,15 @@
+.margin-top{
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+body{
+    background-color: rgb(141, 245, 160);
+}
+.height {
+    height: 95vh;
+}
+.container-xxl {
+    min-height: calc(100vh - 120px); /* Adjust the value to leave space for the footer (100px in this example) */
+    overflow-y: auto;   
+   
+  }

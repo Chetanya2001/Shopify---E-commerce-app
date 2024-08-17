@@ -1,0 +1,27 @@
+.flex{
+    display: flex;
+
+}
+.height {
+    height : 57vh;
+    background-color: #2e3441;
+}
+.inline-block{
+    display: inline-block;
+}
+.index {
+    z-index: 5;
+}
+.up {
+    z-index: 10;
+    color: #fff
+}
+.but {
+    background-color: #0e141e !important;
+    color : #32c766;
+}
+.bad{
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+}

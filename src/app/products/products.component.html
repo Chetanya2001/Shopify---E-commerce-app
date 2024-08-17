@@ -1,0 +1,24 @@
+<div class="grid">
+  <div class="accord right" *ngIf="occur"></div>
+  <div class="container-lg grid-4-cols">
+    <div class="container" *ngFor="let item of products$ | async">
+      <div class="card style" style="width: 18rem">
+        <img
+          src="{{ item.image }}"
+          class="image-responsive"
+          style="width: 280px; height: 170px"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+        </div>
+        <div class="card-body">
+          <a class="btn btn-primary if" [routerLink]="['/products', item.id]"
+            >See More Details</a
+          >&nbsp;
+          <a class="btn btn-success but" (click)="onAddToCart(item)">ADD</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

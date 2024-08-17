@@ -1,0 +1,53 @@
+<div class="box">
+  <img
+    src="../../assets/images/illustration.jpg"
+    class="image-responsive"
+    width="820px"
+    height="520px"
+  />
+</div>
+<div class="form-container">
+  <div class="alert alert-danger" *ngIf="isError">
+    <p>{{ isError }}</p>
+  </div>
+  <div *ngIf="isLoading">
+    <app-loading-spinner style="text-align: center"></app-loading-spinner>
+  </div>
+  <p class="title">Login For Shop</p>
+  <form class="form" #f="ngForm" (ngSubmit)="onLogin(f)" *ngIf="!isLoading">
+    <div class="input-group">
+
+      <input
+        type="text"
+        name="email"
+        id="username"
+        placeholder="your email address"
+        required
+        ngModel
+        minlength="6"
+        email
+        class="input"
+      />
+    </div><br>
+    <div class="input-group" style="width: 400px">
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="your password"
+        required
+        ngModel
+        minlength="6"
+      />
+      <div class="forgot">
+        <a rel="noopener noreferrer" style="font-size: 14px; font-style: san-serif;">Forgot Password ?</a>
+      </div>
+    </div>&nbsp;<br>  
+    <button class="sign" id="loginButton" type="submit" style="color: #32c766" [disabled]="!f.valid">Login</button>
+  </form><br>
+
+  <p class="signup" style="font-size: 16px;">
+    Don't have an account?
+    <a rel="noopener noreferrer" routerLink="/signup" class="" style="font-size: 16px; font-weight: 600;">Sign Up</a>
+  </p>
+</div>
